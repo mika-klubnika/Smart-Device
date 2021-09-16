@@ -1,6 +1,11 @@
 .social-icon {
   display: flex;
   margin-left: -8px;
+
+  @media (max-width: $max-tablet) {
+    margin-left: 0;
+    padding-right: 25px;
+  }
 }
 
 .social-icon__item {
