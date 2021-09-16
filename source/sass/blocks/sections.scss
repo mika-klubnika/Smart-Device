@@ -1,0 +1,25 @@
+.sections {
+  grid-column: 2/3;
+
+  margin-right: 135px;
+  max-width: 550px;
+  width: 100%;
+}
+
+.sections__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sections__list {
+  &:not(:last-child) {
+    margin-right: 70px;
+  }
+}
+
+.sections__item a {
+  font-size: 15px;
+  line-height: 25px;
+  color: inherit;
+  opacity: 0.5;
+}
