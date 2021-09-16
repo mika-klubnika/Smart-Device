@@ -24,4 +24,14 @@ header {
       background-image: url("../img/background-tablet@2x.png");
     }
   }
+
+  @media (max-width: $max-mobile) {
+    padding-top: 17px;
+    min-height: 647px;
+    background-image: url("../img/background-mobile.png");
+
+    @media (min-resolution: $resolution) {
+      background-image: url("../img/background-mobile@2x.png");
+    }
+  }
 }

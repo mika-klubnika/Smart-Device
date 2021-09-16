@@ -6,6 +6,10 @@
   @media (max-width: $max-tablet) {
     padding-left: 20px;
   }
+
+  @media (max-width: $max-mobile) {
+    padding-left: 15px;
+  }
 }
 
 .nav button {

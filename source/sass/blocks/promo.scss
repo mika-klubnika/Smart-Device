@@ -22,6 +22,16 @@
       background-image: url("../img/payment-tablet@2x.png");
     }
   }
+
+  @media (max-width: $max-mobile) {
+    margin-top: 8px;
+    background-image: url("../img/payment-mobile.png");
+    background-size: 297px 375px;
+
+    @media (min-resolution: $resolution) {
+      background-image: url("../img/payment-mobile@2x.png");
+    }
+  }
 }
 
 .promo__text {
@@ -34,6 +44,12 @@
     padding-top: 111px;
     max-width: calc(100% - var(--image-promo) + 26px);
     padding-left: 58px;
+  }
+
+  @media (max-width: $max-mobile) {
+    max-width: 100%;
+    padding-left: 0;
+    padding-top: 223px;
   }
 }
 
@@ -51,6 +67,12 @@
     font-size: 60px;
     line-height: 70px;
   }
+
+  @media (max-width: $max-mobile) {
+    margin-bottom: 27px;
+    font-size: 40px;
+    line-height: 47px;
+  }
 }
 
 .promo__text p {
@@ -67,6 +89,11 @@
 
     font-size: 18px;
     line-height: 156.8%;
+  }
+
+  @media (max-width: $max-mobile) {
+    margin-bottom: 40px;
+    font-size: 16px;
   }
 
   &::before {
@@ -108,5 +135,26 @@
   @media (max-width: $max-tablet) {
     margin-left: 50px;
     width: 379px;
+  }
+
+  @media (max-width: $max-mobile) {
+    width: 287px;
+    margin: 0 auto;
+  }
+}
+
+.promo__span {
+  &--mobile {
+    display: none;
+
+    @media (max-width: $max-mobile) {
+      display: block;
+    }
+  }
+
+  &--desktop {
+    @media (max-width: $max-mobile) {
+      display: none;
+    }
   }
 }

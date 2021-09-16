@@ -26,6 +26,12 @@
       margin-right: 33px;
     }
   }
+
+  @media (max-width: $max-mobile) {
+    &:not(:last-child) {
+      margin-right: 24px;
+    }
+  }
 }
 
 .contacts__item a {

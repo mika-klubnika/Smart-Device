@@ -391,6 +391,10 @@ p {
     .container {
       padding-left: 26px;
       padding-right: 26px; } }
+  @media (max-width: 767px) {
+    .container {
+      padding-left: 15px;
+      padding-right: 15px; } }
 
 .visually-hidden {
   position: absolute;
@@ -427,6 +431,14 @@ header {
   @media (max-width: 1023px) and (min-resolution: 2dppx) {
     header {
       background-image: url("../img/background-tablet@2x.png"); } }
+  @media (max-width: 767px) {
+    header {
+      padding-top: 17px;
+      min-height: 647px;
+      background-image: url("../img/background-mobile.png"); } }
+  @media (max-width: 767px) and (min-resolution: 2dppx) {
+    header {
+      background-image: url("../img/background-mobile@2x.png"); } }
 
 .nav__inner {
   display: flex;
@@ -435,6 +447,9 @@ header {
   @media (max-width: 1023px) {
     .nav__inner {
       padding-left: 20px; } }
+  @media (max-width: 767px) {
+    .nav__inner {
+      padding-left: 15px; } }
 
 .nav button {
   width: 180px;
@@ -460,6 +475,9 @@ header {
   column-gap: 16px;
   width: max-content;
   color: inherit; }
+  @media (max-width: 767px) {
+    .logo {
+      grid-template-columns: max-content; } }
   .logo--footer {
     margin-bottom: 45px; }
     @media (max-width: 1023px) {
@@ -471,6 +489,10 @@ header {
   grid-row: 1/3;
   width: 52px;
   height: 52px; }
+  @media (max-width: 767px) {
+    .logo img {
+      width: 38px;
+      height: 38px; } }
 
 .logo__title {
   padding-top: 7px;
@@ -478,6 +500,9 @@ header {
   font-weight: bold;
   font-size: 25px;
   line-height: 29px; }
+  @media (max-width: 767px) {
+    .logo__title {
+      display: none; } }
 
 .logo__tagline {
   font-family: "Roboto", "Arial", sans-serif;
@@ -485,6 +510,9 @@ header {
   font-size: 12px;
   line-height: 14px;
   color: var(--gray); }
+  @media (max-width: 767px) {
+    .logo__tagline {
+      display: none; } }
 
 .contacts {
   display: flex;
@@ -507,6 +535,9 @@ header {
       width: max-content; }
       .contacts__item:not(:last-child) {
         margin-right: 33px; } }
+  @media (max-width: 767px) {
+    .contacts__item:not(:last-child) {
+      margin-right: 24px; } }
 
 .contacts__item a {
   position: relative;
@@ -557,6 +588,14 @@ header {
   @media (max-width: 1023px) and (min-resolution: 2dppx) {
     .promo__inner {
       background-image: url("../img/payment-tablet@2x.png"); } }
+  @media (max-width: 767px) {
+    .promo__inner {
+      margin-top: 8px;
+      background-image: url("../img/payment-mobile.png");
+      background-size: 297px 375px; } }
+  @media (max-width: 767px) and (min-resolution: 2dppx) {
+    .promo__inner {
+      background-image: url("../img/payment-mobile@2x.png"); } }
 
 .promo__text {
   --image-promo: 715px;
@@ -568,6 +607,11 @@ header {
       padding-top: 111px;
       max-width: calc(100% - var(--image-promo) + 26px);
       padding-left: 58px; } }
+  @media (max-width: 767px) {
+    .promo__text {
+      max-width: 100%;
+      padding-left: 0;
+      padding-top: 223px; } }
 
 .promo__text h1 {
   margin-bottom: 30px;
@@ -581,6 +625,11 @@ header {
     .promo__text h1 {
       font-size: 60px;
       line-height: 70px; } }
+  @media (max-width: 767px) {
+    .promo__text h1 {
+      margin-bottom: 27px;
+      font-size: 40px;
+      line-height: 47px; } }
 
 .promo__text p {
   position: relative;
@@ -594,6 +643,10 @@ header {
       margin-bottom: 55px;
       font-size: 18px;
       line-height: 156.8%; } }
+  @media (max-width: 767px) {
+    .promo__text p {
+      margin-bottom: 40px;
+      font-size: 16px; } }
   .promo__text p::before {
     content: "";
     position: absolute;
@@ -627,6 +680,20 @@ header {
     .promo__text a {
       margin-left: 50px;
       width: 379px; } }
+  @media (max-width: 767px) {
+    .promo__text a {
+      width: 287px;
+      margin: 0 auto; } }
+
+.promo__span--mobile {
+  display: none; }
+  @media (max-width: 767px) {
+    .promo__span--mobile {
+      display: block; } }
+
+@media (max-width: 767px) {
+  .promo__span--desktop {
+    display: none; } }
 
 .footer {
   background-color: var(--light-gray);
