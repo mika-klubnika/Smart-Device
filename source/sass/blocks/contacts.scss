@@ -1,0 +1,28 @@
+.contacts {
+  display: flex;
+  align-items: center;
+}
+
+.contacts__list {
+  display: flex;
+  margin-right: 45px;
+}
+
+.contacts__item {
+  width: 215px;
+  white-space: nowrap;
+}
+
+.contacts__item a {
+  position: relative;
+
+  font-size: 16px;
+  line-height: 18px;
+  color: inherit;
+
+  &::before {
+    position: absolute;
+    content: attr(aria-label);
+    padding-left: 35px;
+  }
+}
