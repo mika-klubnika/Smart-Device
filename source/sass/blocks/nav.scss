@@ -2,6 +2,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: $max-tablet) {
+    padding-left: 20px;
+  }
 }
 
 .nav button {
@@ -21,4 +25,9 @@
   text-transform: uppercase;
 
   color: inherit;
+  cursor: pointer;
+
+  @media (max-width: $max-tablet) {
+    display: none;
+  }
 }

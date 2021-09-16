@@ -6,15 +6,31 @@
 .contacts__list {
   display: flex;
   margin-right: 45px;
+
+  @media (max-width: $max-tablet) {
+    margin-right: 0;
+  }
 }
 
 .contacts__item {
+  display: flex;
+  align-items: center;
+
   width: 215px;
   white-space: nowrap;
+
+  @media (max-width: $max-tablet) {
+    width: max-content;
+
+    &:not(:last-child) {
+      margin-right: 33px;
+    }
+  }
 }
 
 .contacts__item a {
   position: relative;
+  display: flex;
 
   font-size: 16px;
   line-height: 18px;
@@ -24,5 +40,29 @@
     position: absolute;
     content: attr(aria-label);
     padding-left: 35px;
+
+    @media (max-width: $max-tablet) {
+      content: "";
+    }
+  }
+}
+
+.contacts__item--email svg {
+  width: 19px;
+  height: 14px;
+
+  @media (max-width: $max-tablet) {
+    width: 25px;
+    height: 18px;
+  }
+}
+
+.contacts__item--phone svg {
+  width: 18px;
+  height: 18px;
+
+  @media (max-width: $max-tablet) {
+    width: 24px;
+    height: 24px;
   }
 }

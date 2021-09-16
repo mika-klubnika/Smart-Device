@@ -16,4 +16,13 @@
   line-height: 25px;
   color: inherit;
   opacity: 0.5;
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

@@ -9,4 +9,19 @@ header {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+
+  @media (min-resolution: $resolution) {
+    background-image: url("../img/background@2x.png");
+  }
+
+  @media (max-width: $max-tablet) {
+    padding-top: 20px;
+    min-height: 685px;
+
+    background-image: url("../img/background-tablet.png");
+
+    @media (min-resolution: $resolution) {
+      background-image: url("../img/background-tablet@2x.png");
+    }
+  }
 }
