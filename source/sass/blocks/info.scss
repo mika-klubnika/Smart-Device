@@ -1,0 +1,9 @@
+.info {
+  background-image: url("../../img/background-triangles.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  @media (min-resolution: $resolution) {
+    background-image: url("../img/background-triangles@2x.png");
+  }
+}
