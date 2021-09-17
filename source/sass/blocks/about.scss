@@ -13,6 +13,17 @@
   @media (min-resolution: $resolution) {
     background-image: url("../img/2005@2x.png");
   }
+
+  @media (max-width: $max-tablet) {
+    padding-left: 188px;
+    padding-right: 0;
+    background-position: center left -30px;
+  }
+
+  @media (max-width: $max-mobile) {
+    padding-left: 0;
+    background-image: none
+  }
 }
 
 .about__text h2 {
@@ -24,6 +35,11 @@
   line-height: 51px;
 
   color: var(--gray-black);
+
+  @media (max-width: $max-tablet) {
+    font-size: 32px;
+    line-height: 140.62%;
+  }
 }
 
 .about__text p {

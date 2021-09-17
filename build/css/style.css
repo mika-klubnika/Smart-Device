@@ -391,8 +391,8 @@ p {
   padding-right: 80px; }
   @media (max-width: 1023px) {
     .container {
-      padding-left: 26px;
-      padding-right: 26px; } }
+      padding-left: 25px;
+      padding-right: 25px; } }
   @media (max-width: 767px) {
     .container {
       padding-left: 15px;
@@ -953,6 +953,10 @@ header {
 .advantages {
   padding-top: 109px;
   padding-bottom: 50px; }
+  @media (max-width: 1023px) {
+    .advantages {
+      padding-top: 54px;
+      padding-bottom: 20px; } }
 
 .advantages__list {
   display: flex;
@@ -961,6 +965,11 @@ header {
   column-gap: 30px;
   margin-left: 120px;
   margin-right: 120px; }
+  @media (max-width: 1023px) {
+    .advantages__list {
+      column-gap: 28px;
+      margin-left: 0;
+      margin-right: 0; } }
 
 .advantages__item {
   padding: 40px 45px;
@@ -971,6 +980,17 @@ header {
   border-left: 3px solid var(--heavenly);
   cursor: pointer;
   transition: background-color .3s; }
+  @media (max-width: 1023px) {
+    .advantages__item {
+      padding: 24px 20px 27px 27px;
+      width: 48%;
+      min-height: 306px; } }
+  @media (max-width: 767px) {
+    .advantages__item {
+      padding-right: 14px;
+      padding-left: 25px;
+      width: 100%;
+      min-height: 310px; } }
   .advantages__item:hover {
     background-color: var(--heavenly); }
   .advantages__item:hover svg,
@@ -989,6 +1009,10 @@ header {
   font-size: 24px;
   line-height: 34px;
   color: var(--heavenly); }
+  @media (max-width: 767px) {
+    .advantages__item h3 {
+      font-size: 20px;
+      line-height: 140.62%; } }
 
 .advantages__item p {
   font-size: 16px;
@@ -1007,6 +1031,15 @@ header {
   @media (min-resolution: 2dppx) {
     .about__text {
       background-image: url("../img/2005@2x.png"); } }
+  @media (max-width: 1023px) {
+    .about__text {
+      padding-left: 188px;
+      padding-right: 0;
+      background-position: center left -30px; } }
+  @media (max-width: 767px) {
+    .about__text {
+      padding-left: 0;
+      background-image: none; } }
 
 .about__text h2 {
   margin-bottom: 18px;
@@ -1015,6 +1048,10 @@ header {
   font-size: 36px;
   line-height: 51px;
   color: var(--gray-black); }
+  @media (max-width: 1023px) {
+    .about__text h2 {
+      font-size: 32px;
+      line-height: 140.62%; } }
 
 .about__text p {
   margin-bottom: 15px;
