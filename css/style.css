@@ -945,7 +945,8 @@ header {
 .info {
   background-image: url("../../img/background-triangles.png");
   background-repeat: no-repeat;
-  background-position: center center; }
+  background-position: center center;
+  background-size: 1920px 1347px; }
   @media (min-resolution: 2dppx) {
     .info {
       background-image: url("../img/background-triangles@2x.png"); } }
@@ -958,7 +959,7 @@ header {
       padding-top: 54px;
       padding-bottom: 20px; } }
 
-.advantages__list {
+.advantages ul {
   display: flex;
   flex-wrap: wrap;
   row-gap: 30px;
@@ -966,12 +967,12 @@ header {
   margin-left: 120px;
   margin-right: 120px; }
   @media (max-width: 1023px) {
-    .advantages__list {
+    .advantages ul {
       column-gap: 28px;
       margin-left: 0;
       margin-right: 0; } }
 
-.advantages__item {
+.advantages li {
   padding: 40px 45px;
   width: 570px;
   min-height: 299px;
@@ -981,28 +982,28 @@ header {
   cursor: pointer;
   transition: background-color .3s; }
   @media (max-width: 1023px) {
-    .advantages__item {
+    .advantages li {
       padding: 24px 20px 27px 27px;
       width: 48%;
       min-height: 306px; } }
   @media (max-width: 767px) {
-    .advantages__item {
+    .advantages li {
       padding-right: 14px;
       padding-left: 25px;
       width: 100%;
       min-height: 310px; } }
-  .advantages__item:hover {
+  .advantages li:hover {
     background-color: var(--heavenly); }
-  .advantages__item:hover svg,
-  .advantages__item:hover h3,
-  .advantages__item:hover p {
+  .advantages li:hover svg,
+  .advantages li:hover h3,
+  .advantages li:hover p {
     color: var(--white); }
 
-.advantages__item svg {
+.advantages svg {
   margin-bottom: 23px;
   color: var(--heavenly); }
 
-.advantages__item h3 {
+.advantages h3 {
   margin-bottom: 15px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: normal;
@@ -1010,11 +1011,11 @@ header {
   line-height: 34px;
   color: var(--heavenly); }
   @media (max-width: 767px) {
-    .advantages__item h3 {
+    .advantages h3 {
       font-size: 20px;
       line-height: 140.62%; } }
 
-.advantages__item p {
+.advantages p {
   font-size: 16px;
   line-height: 22px;
   color: var(--gray-black); }
@@ -1026,6 +1027,7 @@ header {
 .about__text {
   padding: 25px 120px 25px 302px;
   background-image: url("../img/2005.png");
+  background-size: 220px 317px;
   background-repeat: no-repeat;
   background-position: center left 100px; }
   @media (min-resolution: 2dppx) {
