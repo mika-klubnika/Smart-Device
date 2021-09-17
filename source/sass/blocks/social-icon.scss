@@ -6,6 +6,10 @@
     margin-left: 0;
     padding-right: 25px;
   }
+
+  @media (max-width: $max-mobile) {
+    padding-right: 0;
+  }
 }
 
 .social-icon__item {

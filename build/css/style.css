@@ -484,6 +484,11 @@ header {
       .logo--footer {
         margin-bottom: 0;
         padding-left: 25px; } }
+    @media (max-width: 767px) {
+      .logo--footer {
+        grid-template-columns: max-content 1fr;
+        padding-left: 0;
+        margin-bottom: 26px; } }
 
 .logo img {
   grid-row: 1/3;
@@ -494,6 +499,10 @@ header {
       width: 38px;
       height: 38px; } }
 
+.logo--footer img {
+  width: 52px;
+  height: 52px; }
+
 .logo__title {
   padding-top: 7px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -503,6 +512,8 @@ header {
   @media (max-width: 767px) {
     .logo__title {
       display: none; } }
+  .logo__title--footer {
+    display: block; }
 
 .logo__tagline {
   font-family: "Roboto", "Arial", sans-serif;
@@ -513,6 +524,8 @@ header {
   @media (max-width: 767px) {
     .logo__tagline {
       display: none; } }
+  .logo__tagline--footer {
+    display: block; }
 
 .contacts {
   display: flex;
@@ -715,6 +728,12 @@ header {
       padding-top: 19px;
       padding-left: 0;
       padding-right: 0; } }
+  @media (max-width: 767px) {
+    .footer__inner {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto auto;
+      column-gap: 0;
+      padding-top: 46px; } }
 
 .footer h3 {
   margin-bottom: 25px;
@@ -740,12 +759,18 @@ header {
       padding-bottom: 26px;
       max-width: 100%;
       border-bottom: 1px solid var(--grayish-green); } }
+  @media (max-width: 767px) {
+    .footer__icon {
+      flex-direction: column;
+      justify-content: center;
+      padding-bottom: 54px; } }
 
 .footer__years {
   display: none; }
   @media (max-width: 1023px) {
     .footer__years {
       display: block;
+      margin-bottom: 31px;
       font-size: 13px;
       line-height: 24px;
       letter-spacing: 0.04em;
@@ -770,6 +795,12 @@ header {
   @media (max-width: 1023px) {
     .footer__text-block {
       min-height: 69px; } }
+  @media (max-width: 767px) {
+    .footer__text-block {
+      justify-content: center;
+      flex-direction: column;
+      padding-top: 28px;
+      padding-bottom: 5px; } }
 
 .footer__text--copyright {
   flex-grow: 1; }
@@ -786,6 +817,10 @@ header {
 .footer__text--conditions {
   flex-grow: 6; }
 
+@media (max-width: 767px) {
+  .footer__text {
+    margin-bottom: 21px; } }
+
 .social-icon {
   display: flex;
   margin-left: -8px; }
@@ -793,6 +828,9 @@ header {
     .social-icon {
       margin-left: 0;
       padding-right: 25px; } }
+  @media (max-width: 767px) {
+    .social-icon {
+      padding-right: 0; } }
 
 .social-icon__item {
   margin: 8px; }
@@ -812,6 +850,10 @@ header {
       margin-right: 0;
       padding-left: 25px;
       max-width: 100%; } }
+  @media (max-width: 767px) {
+    .sections {
+      padding-left: 15px;
+      padding-right: 15px; } }
 
 .sections__wrapper {
   display: flex;
@@ -846,6 +888,14 @@ header {
       justify-self: flex-end;
       padding-right: 25px;
       max-width: 360px; } }
+  @media (max-width: 767px) {
+    .address {
+      grid-column: 1/2;
+      grid-row: 3/4;
+      justify-self: flex-start;
+      padding-left: 15px;
+      padding-right: 15px;
+      max-width: 100%; } }
 
 .address p {
   font-size: 15px;
@@ -861,3 +911,34 @@ header {
     opacity: 1; }
   .address a:active {
     opacity: 0.3; }
+
+.accordion {
+  position: relative;
+  display: flex;
+  justify-content: space-between; }
+  @media (max-width: 767px) {
+    .accordion {
+      cursor: pointer; } }
+
+.accordion__toggle {
+  display: none; }
+  @media (max-width: 767px) {
+    .accordion__toggle {
+      display: block;
+      padding: 0;
+      width: 25px;
+      height: 25px;
+      cursor: pointer;
+      border: none;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: var(--transparent);
+      background-image: url("../img/minus.svg"); }
+      .accordion__toggle--close {
+        background-image: url("../img/plus.svg"); } }
+
+@media (max-width: 767px) {
+  .accordion__block {
+    display: none; }
+    .accordion__block--active {
+      display: block; } }

@@ -99,8 +99,13 @@
       </div>
 
       <div class="sections">
-        <h3>Разделы сайта</h3>
-        <div class="sections__wrapper">
+        <div class="accordion">
+          <h3>Разделы сайта</h3>
+          <button class="sections__toggle accordion__toggle accordion__toggle--close" type="button"
+            aria-label="Открыть"></button>
+        </div>
+
+        <div class="sections__wrapper accordion__block">
           <ul class="sections__list">
             <li class="sections__item">
               <a href="#">О компании</a>
@@ -130,19 +135,26 @@
       </div>
 
       <div class="address">
-        <h3>Наш офис</h3>
-        <p>г. Мытищи, Олимпийский проспект, д.10</p>
-        <ul class="address__tel">
-          <li>
-            <a href="tel:+74955894050">+7 (495) 589-40-50</a>
-          </li>
-          <li>
-            <a href="tel:+79250038767">+7 (925) 003-87-67</a>
-          </li>
-          <li>
-            <a href="tel:+792692608079">+7 (926) 926-080-79</a>
-          </li>
-        </ul>
+        <div class="accordion">
+          <h3>Наш офис</h3>
+          <button class="address__toggle accordion__toggle accordion__toggle--close" type="button"
+            aria-label="Открыть"></button>
+        </div>
+
+        <div class="accordion__block">
+          <p>г. Мытищи, Олимпийский проспект, д.10</p>
+          <ul class="address__tel">
+            <li>
+              <a href="tel:+74955894050">+7 (495) 589-40-50</a>
+            </li>
+            <li>
+              <a href="tel:+79250038767">+7 (925) 003-87-67</a>
+            </li>
+            <li>
+              <a href="tel:+792692608079">+7 (926) 926-080-79</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
 

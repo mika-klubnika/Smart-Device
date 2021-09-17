@@ -22,6 +22,14 @@
     padding-left: 0;
     padding-right: 0;
   }
+
+  @media (max-width: $max-mobile) {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    column-gap: 0;
+
+    padding-top: 46px;
+  }
 }
 
 .footer h3 {
@@ -55,6 +63,12 @@
 
     border-bottom: 1px solid var(--grayish-green);
   }
+
+  @media (max-width: $max-mobile) {
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 54px;
+  }
 }
 
 .footer__years {
@@ -62,6 +76,7 @@
 
   @media (max-width: $max-tablet) {
     display: block;
+    margin-bottom: 31px;
 
     font-size: 13px;
     line-height: 24px;
@@ -98,6 +113,14 @@
   @media (max-width: $max-tablet) {
     min-height: 69px;
   }
+
+  @media (max-width: $max-mobile) {
+    justify-content: center;
+    flex-direction: column;
+
+    padding-top: 28px;
+    padding-bottom: 5px;
+  }
 }
 
 .footer__text {
@@ -119,5 +142,9 @@
 
   &--conditions {
     flex-grow: 6;
+  }
+
+  @media (max-width: $max-mobile) {
+    margin-bottom: 21px;
   }
 }

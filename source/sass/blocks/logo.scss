@@ -17,6 +17,12 @@
       margin-bottom: 0;
       padding-left: 25px;
     }
+
+    @media (max-width: $max-mobile) {
+      grid-template-columns: max-content 1fr;
+      padding-left: 0;
+      margin-bottom: 26px;
+    }
   }
 }
 
@@ -32,6 +38,11 @@
   }
 }
 
+.logo--footer img {
+  width: 52px;
+  height: 52px;
+}
+
 .logo__title {
   padding-top: 7px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -41,6 +52,10 @@
 
   @media (max-width: $max-mobile) {
     display: none;
+  }
+
+  &--footer {
+    display: block;
   }
 }
 
@@ -54,5 +69,9 @@
 
   @media (max-width: $max-mobile) {
     display: none;
+  }
+
+  &--footer {
+    display: block;
   }
 }

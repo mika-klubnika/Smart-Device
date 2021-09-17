@@ -13,6 +13,11 @@
     padding-left: 25px;
     max-width: 100%;
   }
+
+  @media (max-width: $max-mobile) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .sections__wrapper {
