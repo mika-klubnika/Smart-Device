@@ -5,6 +5,11 @@
   padding-left: 80px;
   padding-right: 80px;
 
+  &--main {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+
   @media (max-width: $max-tablet) {
     padding-left: 25px;
     padding-right: 25px;

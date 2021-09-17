@@ -4,20 +4,19 @@
 }
 
 .about__text {
-  padding: 25px 120px 25px 302px;
+  padding: 25px 120px 25px 180px;
 
   background-image: url("../img/2005.png");
+  background-size: 220px 317px;
   background-repeat: no-repeat;
-  background-position: center left 100px;
+  background-position: center left -30px;
 
   @media (min-resolution: $resolution) {
     background-image: url("../img/2005@2x.png");
   }
 
   @media (max-width: $max-tablet) {
-    padding-left: 188px;
     padding-right: 0;
-    background-position: center left -30px;
   }
 
   @media (max-width: $max-mobile) {
