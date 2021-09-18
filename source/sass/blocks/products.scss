@@ -54,14 +54,13 @@
 }
 
 .products__item {
-  width: 370px;
+  width: 33%;
   height: 620px;
 
   background-size: 370px 620px;
   background-repeat: no-repeat;
 
   @media (max-width: $min-desktop) {
-    width: 33%;
     height: 480px;
     background-size: cover;
   }

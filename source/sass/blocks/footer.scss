@@ -7,15 +7,11 @@
   display: grid;
   grid-template-columns: repeat(3, max-content);
   row-gap: 55px;
-  column-gap: 100px;
+  justify-content: space-between;
 
   padding-top: 65px;
   padding-bottom: 60px;
 
-  @media (max-width: $min-desktop) {
-    justify-content: space-between;
-    column-gap: 0;
-  }
 
   @media (max-width: $max-tablet) {
     grid-template-columns: repeat(2, 1fr);
@@ -54,13 +50,9 @@
 .footer__icon {
   grid-column: 1/2;
 
-  margin-right: 107px;
+  margin-right: 20px;
   max-width: 230px;
   width: 100%;
-
-  @media (max-width: $min-desktop) {
-    margin-right: 20px;
-  }
 
   @media (max-width: $max-tablet) {
     grid-column: 1/3;
