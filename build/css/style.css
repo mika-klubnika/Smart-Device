@@ -1120,6 +1120,7 @@ header {
       background-position: top 6px left -33px; } }
   @media (max-width: 767px) {
     .about__text {
+      padding-bottom: 25px;
       padding-left: 0;
       background-image: none; } }
 
