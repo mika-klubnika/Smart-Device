@@ -1,11 +1,7 @@
-.promo__inner {
-  margin-top: 168px;
-  padding-bottom: 10px;
-  height: 526px;
-
+.promo {
   background-image: url("../img/payment.png");
   background-repeat: no-repeat;
-  background-position: top right;
+  background-position: top right calc(50% - 430px);
   background-size: 705px 525px;
 
   @media (min-resolution: $resolution) {
@@ -13,15 +9,13 @@
   }
 
   @media (max-width: $min-desktop) {
-    margin-top: 100px;
     background-size: 515px 385px;
   }
 
   @media (max-width: $max-tablet) {
-    margin-top: 5px;
-
     background-image: url("../img/payment-tablet.png");
     background-size: 315px 391px;
+    background-position: top right;
 
     @media (min-resolution: $resolution) {
       background-image: url("../img/payment-tablet@2x.png");
@@ -39,6 +33,24 @@
   }
 }
 
+.promo__inner {
+  margin-top: 168px;
+  padding-bottom: 10px;
+  height: 526px;
+
+  @media (max-width: $min-desktop) {
+    margin-top: 100px;
+  }
+
+  @media (max-width: $max-tablet) {
+    margin-top: 5px;
+  }
+
+  @media (max-width: $max-mobile) {
+    margin-top: 8px;
+  }
+}
+
 .promo__text {
   --image-promo: 715px;
   padding-top: 62px;
@@ -52,7 +64,7 @@
     --image-promo: 250px;
     padding-top: 111px;
     max-width: calc(100% - var(--image-promo) + 26px);
-    padding-left: 58px;
+    padding-left: 63px;
   }
 
   @media (max-width: $max-mobile) {

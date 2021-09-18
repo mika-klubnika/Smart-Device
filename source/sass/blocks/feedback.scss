@@ -1,19 +1,29 @@
 .feedback {
-  padding-top: 96px;
-  padding-bottom: 116px;
+  padding-top: 93px;
+  padding-bottom: 110px;
   background-color: var(--heavenly);
   color: var(--white);
 
   background-image: url("../img/background-feedback.png");
   background-repeat: no-repeat;
-  background-position: calc(50% + 120px) center;
+  background-position: left calc(50% + 150px) top -60px;
 
   @media (min-resolution: $resolution) {
     background-image: url("../img/background-feedback@2x.png");
   }
 
-  @media (max-width: $max-tablet) {
+  @media (max-width: $min-desktop) {
     background-image: none;
+  }
+
+  @media (max-width: $max-tablet) {
+    padding-top: 78px;
+    padding-bottom: 104px;
+  }
+
+  @media (max-width: $max-mobile) {
+    padding-top: 30px;
+    padding-bottom: 40px;
   }
 }
 
@@ -23,13 +33,13 @@
 
   background-image: url("../img/plane.png");
   background-repeat: no-repeat;
-  background-position: center left +170px;
+  background-position: top 70px left 110px;
 
   @media (min-resolution: $resolution) {
     background-image: url("../img/plane@2x.png");
   }
 
-  @media (max-width: $max-tablet) {
+  @media (max-width: $min-desktop) {
     justify-content: center;
     background-image: none;
   }
@@ -49,7 +59,7 @@
 }
 
 .feedback h2 {
-  margin-bottom: 7px;
+  margin-bottom: 10px;
 
   font-family: $roboto-condensed;
   font-weight: normal;
@@ -57,6 +67,7 @@
   line-height: 51px;
 
   @media (max-width: $max-tablet) {
+    margin-bottom: 18px;
     font-size: 32px;
     line-height: 140%;
   }
@@ -71,6 +82,14 @@
 
   font-size: 16px;
   line-height: 22px;
+
+  @media (max-width: $max-tablet) {
+    margin-bottom: 53px;
+  }
+
+  @media (max-width: $max-mobile) {
+    margin-bottom: 22px;
+  }
 }
 
 .feedback__wrapper {
@@ -80,10 +99,16 @@
   margin-top: 43px;
   margin-right: 35px;
 
+  @media (max-width: $max-tablet) {
+    margin-top: 45px;
+    margin-right: 40px;
+  }
+
   @media (max-width: $max-mobile) {
     flex-direction: column;
     align-items: flex-start;
     margin-right: 0;
+    margin-top: 28px;
   }
 }
 
@@ -142,6 +167,11 @@
     height: 159px;
   }
 
+  @media (max-width: $max-mobile) {
+    margin-top: 32px;
+    height: 104px;
+  }
+
   &::placeholder {
     font-family: $pt-mono;
     font-size: 16px;
@@ -157,19 +187,36 @@
 .feedback input[type="checkbox"]+label {
   position: relative;
   display: flex;
-  padding-left: 35px;
+  padding-left: 40px;
+
+  font-size: 14px;
+  line-height: 16px;
 
   opacity: 0.8;
   cursor: pointer;
 
+  @media (max-width: $max-mobile) {
+    padding-left: 35px;
+  }
+
   &::before {
     content: "";
     position: absolute;
-    top: 2px;
-    left: 8px;
+    top: 0;
+    left: 7px;
     width: 16px;
     height: 16px;
     border: 1px solid var(--white);
+
+    @media (max-width: $max-tablet) {
+      top: 2px;
+      left: 5px;
+    }
+
+    @media (max-width: $max-mobile) {
+      top: 0;
+      left: 0;
+    }
   }
 }
 
@@ -177,19 +224,29 @@
   &::after {
     content: "";
     position: absolute;
-    top: 6px;
-    left: 14px;
+    top: 4px;
+    left: 12px;
     width: 5px;
     height: 7px;
     border-bottom: 1px solid var(--white);
     border-right: 1px solid var(--white);
     transform: rotate(45deg);
+
+    @media (max-width: $max-tablet) {
+      top: 5px;
+      left: 11px;
+    }
+
+    @media (max-width: $max-mobile) {
+      top: 3px;
+      left: 6px;
+    }
   }
 }
 
 .feedback input[type="checkbox"]:focus+label::before,
 .feedback input[type="checkbox"]:hover+label::before {
-    outline: 1px solid;
+  outline: 1px solid;
 }
 
 .feedback button {

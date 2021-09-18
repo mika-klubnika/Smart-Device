@@ -4,11 +4,12 @@
 
   @media (max-width: $max-tablet) {
     margin-left: 0;
-    padding-right: 25px;
+    padding-right: 15px;
   }
 
   @media (max-width: $max-mobile) {
     padding-right: 0;
+    margin-top: 25px;
   }
 }
 

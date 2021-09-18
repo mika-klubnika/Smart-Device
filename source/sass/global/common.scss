@@ -2,16 +2,16 @@
   max-width: $max-desktop;
   min-width: $mobile;
   margin: 0 auto;
-  padding-left: 80px;
-  padding-right: 80px;
+  padding-left: 15px;
+  padding-right: 15px;
 
   &--main {
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 135px;
+    padding-right: 135px;
 
     @media (max-width: $min-desktop) {
-      padding-left: 170px;
-      padding-right: 170px;
+      padding-left: 110px;
+      padding-right: 110px;
     }
   }
 

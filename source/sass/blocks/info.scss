@@ -7,4 +7,12 @@
   @media (min-resolution: $resolution) {
     background-image: url("../img/background-triangles@2x.png");
   }
+
+  @media (max-width: $max-tablet) {
+    background-position: left -349px top -84px;
+  }
+
+  @media (max-width: $max-mobile) {
+    background-position: left -655px top 478px;
+  }
 }

@@ -21,6 +21,8 @@
   @media (max-width: $max-mobile) {
     padding-left: 15px;
     padding-right: 15px;
+
+    border-bottom: 1px solid var(--grayish-green);
   }
 }
 
@@ -30,6 +32,10 @@
 
   @media (max-width: $min-desktop) {
     flex-direction: column;
+  }
+
+  @media (max-width: $max-mobile) {
+    padding-bottom: 27px;
   }
 }
 
