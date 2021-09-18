@@ -1,0 +1,37 @@
+header {
+  padding-top: 33px;
+  min-height: 878px;
+
+  color: var(--white);
+
+  background-color: var(--dark-desaturated-blue);
+  background-image: url("../img/background.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  @media (min-resolution: $resolution) {
+    background-image: url("../img/background@2x.png");
+  }
+
+  @media (max-width: $max-tablet) {
+    padding-top: 20px;
+    min-height: 685px;
+
+    background-image: url("../img/background-tablet.png");
+
+    @media (min-resolution: $resolution) {
+      background-image: url("../img/background-tablet@2x.png");
+    }
+  }
+
+  @media (max-width: $max-mobile) {
+    padding-top: 17px;
+    min-height: 647px;
+    background-image: url("../img/background-mobile.png");
+
+    @media (min-resolution: $resolution) {
+      background-image: url("../img/background-mobile@2x.png");
+    }
+  }
+}

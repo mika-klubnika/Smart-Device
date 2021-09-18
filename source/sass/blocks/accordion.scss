@@ -1,0 +1,43 @@
+.accordion {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: $max-mobile) {
+    cursor: pointer;
+  }
+}
+
+.accordion__toggle {
+  display: none;
+
+  @media (max-width: $max-mobile) {
+    display: block;
+    padding: 0;
+
+    width: 25px;
+    height: 25px;
+
+    cursor: pointer;
+    border: none;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--transparent);
+    background-image: url("../img/minus.svg");
+
+    &--close {
+      background-image: url("../img/plus.svg");
+    }
+  }
+}
+
+.accordion__block {
+  @media (max-width: $max-mobile) {
+    display: none;
+
+    &--active {
+      display: block;
+    }
+  }
+}

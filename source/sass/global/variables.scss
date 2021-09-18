@@ -1,0 +1,23 @@
+:root {
+  --transparent: transparent;
+  --black: #000000;
+  --dark-desaturated-blue: #1b2d37;
+
+  --gray: #788891;
+  --grayish-green: rgb(98, 105, 98, 0.2);
+  --white: #ffffff;
+  --light-gray: #fafafa;
+
+  --heavenly: #00b2ff;
+}
+
+$desktop: 1570px;
+$min-desktop: 1024px;
+
+$max-tablet: 1023px;
+$tablet: 768px;
+
+$max-mobile: 767px;
+$mobile: 320px;
+
+$resolution: 2dppx;
