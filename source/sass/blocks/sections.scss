@@ -5,6 +5,10 @@
   max-width: 550px;
   width: 100%;
 
+  @media (max-width: $min-desktop) {
+    margin-right: 20px;
+  }
+
   @media (max-width: $max-tablet) {
     grid-column: 1/2;
     grid-row: 2/3;
@@ -17,6 +21,8 @@
   @media (max-width: $max-mobile) {
     padding-left: 15px;
     padding-right: 15px;
+
+    border-bottom: 1px solid var(--grayish-green);
   }
 }
 
@@ -24,14 +30,22 @@
   display: flex;
   flex-wrap: wrap;
 
-  @media (max-width: $max-tablet) {
+  @media (max-width: $min-desktop) {
     flex-direction: column;
+  }
+
+  @media (max-width: $max-mobile) {
+    padding-bottom: 27px;
   }
 }
 
 .sections__list {
   &:not(:last-child) {
     margin-right: 70px;
+
+    @media (max-width: $min-desktop) {
+      margin-right: 0;
+    }
   }
 }
 

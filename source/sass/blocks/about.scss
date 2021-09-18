@@ -1,0 +1,129 @@
+.about {
+  padding-top: 30px;
+  padding-bottom: 85px;
+
+  @media (max-width: $max-tablet) {
+    padding-bottom: 20px;
+  }
+
+  @media (max-width: $max-mobile) {
+    padding-top: 28px;
+    padding-bottom: 38px;
+  }
+}
+
+.about__text {
+  padding: 25px 120px 25px 180px;
+
+  background-image: url("../img/2005.png");
+  background-size: 220px 317px;
+  background-repeat: no-repeat;
+  background-position: top 30px left -30px;
+
+  @media (min-resolution: $resolution) {
+    background-image: url("../img/2005@2x.png");
+  }
+
+  @media (max-width: $min-desktop) {
+    padding: 5px 0 64px 185px;
+  }
+
+  @media (max-width: $max-tablet) {
+    background-size: 250px 360px;
+    background-position: top 6px left -33px;
+  }
+
+  @media (max-width: $max-mobile) {
+    padding-bottom: 25px;
+    padding-left: 0;
+    background-image: none
+  }
+}
+
+.about__text h2 {
+  margin-bottom: 22px;
+
+  font-family: $roboto-condensed;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 51px;
+
+  color: var(--gray-black);
+
+  @media (max-width: $max-tablet) {
+    margin-bottom: 25px;
+    font-size: 32px;
+    line-height: 140%;
+  }
+
+  @media (max-width: $max-mobile) {
+    font-size: 28px;
+  }
+}
+
+.about__text p {
+  padding-bottom: 22px;
+
+  font-family: $pt-mono;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: var(--gray-black);
+
+  @media (max-width: $max-mobile) {
+    padding-bottom: 35px;
+  }
+}
+
+.about__text span {
+  @media (max-width: $max-tablet) {
+    display: none;
+  }
+}
+
+.about__text a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 15px;
+  width: 180px;
+  min-height: 45px;
+
+  font-family: $roboto-condensed;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: var(--heavenly);
+
+  border: 1px solid var(--heavenly);
+  border-radius: 5px;
+
+  transition: background-color 0.3s, color 0.3s;
+
+  @media (max-width: $max-tablet) {
+    margin-top: 20px;
+  }
+
+  @media (max-width: $max-mobile) {
+    margin-top: 0;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: var(--heavenly);
+    color: var(--white);
+    border: 1px solid var(--white);
+  }
+
+  &:active {
+    background-color: var(--transparent);
+    color: var(--heavenly);
+    border: 1px solid var(--heavenly);
+  }
+}

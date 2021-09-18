@@ -49,3 +49,9 @@
     opacity: 0.3;
   }
 }
+
+.address__tel {
+  @media (max-width: $max-mobile) {
+    padding-bottom: 27px;
+  }
+}

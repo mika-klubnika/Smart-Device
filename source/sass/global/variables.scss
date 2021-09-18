@@ -2,17 +2,26 @@
   --transparent: transparent;
   --black: #000000;
   --dark-desaturated-blue: #1b2d37;
+  --gray-black: #666666;
+
+  --grayish-green: rgb(98, 105, 98, 0.2);
+  --white-01: rgb(255, 255, 255, 0.1);
 
   --gray: #788891;
-  --grayish-green: rgb(98, 105, 98, 0.2);
   --white: #ffffff;
   --light-gray: #fafafa;
+  --light: #ebebeb;
 
   --heavenly: #00b2ff;
+
+  --shadow: 8px 7px 10px 0 rgba(24, 70, 107, 0.8);
 }
 
-$desktop: 1570px;
-$min-desktop: 1024px;
+$roboto-condensed: "Roboto Condensed", "Arial", sans-serif;
+$pt-mono: "PT Mono", "Courier New", monospace;
+
+$max-desktop: 1440px;
+$min-desktop: 1220px;
 
 $max-tablet: 1023px;
 $tablet: 768px;
