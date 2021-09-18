@@ -17,7 +17,7 @@
 
   @media (max-width: $max-tablet) {
     font-size: 32px;
-    line-height: 140.62%;
+    line-height: 140%;
   }
 
   @media (max-width: $max-mobile) {
@@ -115,6 +115,8 @@
     width: 100%;
     background-size: cover;
   }
+
+
 }
 
 .products a {
@@ -153,5 +155,9 @@
     background-image: url("../img/arrow.svg");
     background-repeat: no-repeat;
     background-position: center;
+  }
+
+  &:hover {
+    box-shadow: var(--shadow);
   }
 }
