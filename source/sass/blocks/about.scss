@@ -15,7 +15,7 @@
     background-image: url("../img/2005@2x.png");
   }
 
-  @media (max-width: $max-tablet) {
+  @media (max-width: $min-desktop) {
     padding-right: 0;
   }
 

@@ -12,6 +12,11 @@
     background-image: url("../img/payment@2x.png");
   }
 
+  @media (max-width: $min-desktop) {
+    margin-top: 100px;
+    background-size: 515px 385px;
+  }
+
   @media (max-width: $max-tablet) {
     margin-top: 5px;
 
@@ -38,6 +43,10 @@
   --image-promo: 715px;
   padding-top: 62px;
   max-width: calc(100% - var(--image-promo) + 80px);
+
+  @media (max-width: $min-desktop) {
+    --image-promo: 470px;
+  }
 
   @media (max-width: $max-tablet) {
     --image-promo: 250px;

@@ -1,5 +1,5 @@
 .container {
-  max-width: $desktop;
+  max-width: $max-desktop;
   min-width: $mobile;
   margin: 0 auto;
   padding-left: 80px;
@@ -8,6 +8,11 @@
   &--main {
     padding-left: 200px;
     padding-right: 200px;
+
+    @media (max-width: $min-desktop) {
+      padding-left: 170px;
+      padding-right: 170px;
+    }
   }
 
   @media (max-width: $max-tablet) {

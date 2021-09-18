@@ -11,18 +11,15 @@
 .advantages ul {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 
   row-gap: 30px;
-  column-gap: 30px;
-
-  @media (max-width: $max-tablet) {
-    column-gap: 28px;
-  }
 }
 
 .advantages li {
   padding: 40px 45px;
-  width: 570px;
+  max-width: 570px;
+  width: 48%;
   min-height: 299px;
 
   background-color: var(--white);
@@ -34,7 +31,6 @@
 
   @media (max-width: $max-tablet) {
     padding: 24px 20px 27px 27px;
-    width: 48%;
     min-height: 306px;
   }
 

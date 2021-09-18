@@ -5,6 +5,10 @@
   max-width: 550px;
   width: 100%;
 
+  @media (max-width: $min-desktop) {
+    margin-right: 20px;
+  }
+
   @media (max-width: $max-tablet) {
     grid-column: 1/2;
     grid-row: 2/3;
@@ -24,7 +28,7 @@
   display: flex;
   flex-wrap: wrap;
 
-  @media (max-width: $max-tablet) {
+  @media (max-width: $min-desktop) {
     flex-direction: column;
   }
 }
@@ -32,6 +36,10 @@
 .sections__list {
   &:not(:last-child) {
     margin-right: 70px;
+
+    @media (max-width: $min-desktop) {
+      margin-right: 0;
+    }
   }
 }
 
