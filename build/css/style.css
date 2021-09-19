@@ -1017,6 +1017,12 @@ header {
 .accordion__item--active .accordion__toggle {
   background-image: url("../img/minus.svg"); }
 
+.accordion__item--nojs .accordion__block {
+  display: block; }
+
+.accordion__item--nojs .accordion__toggle {
+  background-image: none; }
+
 .info {
   background-image: url("../../img/background-triangles.png");
   background-repeat: no-repeat;
