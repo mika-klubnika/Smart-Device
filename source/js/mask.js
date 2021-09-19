@@ -1,11 +1,19 @@
 'use strict';
 
-const inputPhones = document.querySelectorAll('[type=tel]');
+const phones = document.querySelectorAll('[type=tel]');
 
-if(inputPhones) {
-  for (let i = 0; i < inputPhones.length; i++) {
-    new IMask(inputPhones[i], {
-      mask: '+7(000)000-00-00',
+if(phones) {
+  phones.forEach(phone => {
+    var im = new Inputmask('+7 (999) 999-99-99', {
+      oncomplete: function () {
+        phone.setCustomValidity('');
+      }
     });
-  }
+
+    phone.addEventListener('input', () => {
+      phone.setCustomValidity('Введите корректный номер телефона');
+    });
+
+    im.mask(phone);
+  })
 }
