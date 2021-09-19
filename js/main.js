@@ -5,6 +5,10 @@ const accordionButton = accordion.querySelectorAll('.accordion__button');
 const accordionItems = accordion.querySelectorAll('.accordion__item');
 
 if(accordion && accordionButton && accordionItems) {
+  accordionItems.forEach(item => {
+    item.classList.remove('accordion__item--nojs');
+  })
+
   function toggleAccordion () {
     const thisItem = this.parentNode;
 
