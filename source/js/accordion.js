@@ -1,3 +1,5 @@
+'use strict';
+
 const accordion = document.querySelectorAll('.accordion');
 // const accordionBlock = document.querySelectorAll('.accordion__block');
 
