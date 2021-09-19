@@ -1,31 +1,24 @@
 'use strict';
 
-const accordion = document.querySelectorAll('.accordion');
-// const accordionBlock = document.querySelectorAll('.accordion__block');
+const accordion = document.querySelector('.accordion');
+const accordionButton = accordion.querySelectorAll('.accordion__button');
+const accordionItems = accordion.querySelectorAll('.accordion__item');
 
+if(accordion && accordionButton && accordionItems) {
+  function toggleAccordion () {
+    const thisItem = this.parentNode;
 
-accordion.forEach((elem) => {
-  elem.addEventListener('click', function () {
+    accordionItems.forEach(item => {
+      if (thisItem == item) {
+        thisItem.classList.toggle('accordion__item--active');
+        return;
+      }
+      item.classList.remove('accordion__item--active');
+    });
+  }
 
-    const accordionBlockActive = document.querySelectorAll('.accordion__block--active');
-
-    accordionBlockActive.forEach((elem) => {
-      elem.classList.remove('accordion__block--active');
-    })
-
-    const parentElem = this.parentNode;
-
-    const accordionBlock = parentElem.querySelector('.accordion__block');
-
-    if (accordionBlock.classList.contains('accordion__block--active')) {
-      accordionBlock.classList.toggle('accordion__block--active');
-      accordionToggle.classList.toggle('accordion__toggle--close');
-    }
-    else {
-      accordionBlock.classList.add('accordion__block--active');
-    }
-  })
-})
+  accordionButton.forEach(block => block.addEventListener('click', toggleAccordion));
+}
 
 'use strict';
 

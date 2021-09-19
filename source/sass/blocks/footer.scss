@@ -5,12 +5,12 @@
 
 .footer__inner {
   display: grid;
-  grid-template-columns: repeat(3, max-content);
-  row-gap: 55px;
+  grid-template-columns: max-content 1fr;
+  column-gap: 185px;
   justify-content: space-between;
 
   padding-top: 65px;
-  padding-bottom: 60px;
+  padding-bottom: 55px;
 
 
   @media (max-width: $max-tablet) {
@@ -24,9 +24,9 @@
 
   @media (max-width: $max-mobile) {
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: auto auto;
     column-gap: 0;
-    row-gap: 30px;
+    row-gap: 0;
 
     padding-top: 46px;
     padding-bottom: 0;

@@ -6,9 +6,6 @@
   width: 100%;
 
   @media (max-width: $max-tablet) {
-    grid-column: 1/2;
-    grid-row: 2/3;
-
     margin-right: 0;
     padding-left: 25px;
     max-width: 100%;
@@ -42,6 +39,14 @@
     @media (max-width: $min-desktop) {
       margin-right: 0;
     }
+  }
+}
+
+.sections__item {
+  margin-bottom: 2px;
+
+  @media (max-width: $max-tablet) {
+    margin-bottom: 0;
   }
 }
 
