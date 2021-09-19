@@ -3,6 +3,7 @@
 
   &--open {
     display: block;
+    animation: modal-open 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   }
 }
 
@@ -203,4 +204,15 @@
   background-color: var(--transparent);
   border: none;
   cursor: pointer;
+}
+
+
+@keyframes modal-open {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }

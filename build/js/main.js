@@ -29,7 +29,7 @@ accordion.forEach((elem) => {
 
 'use strict';
 
-const inputPhones = document.querySelectorAll('#phone');
+const inputPhones = document.querySelectorAll('[type=tel]');
 
 if(inputPhones) {
   for (let i = 0; i < inputPhones.length; i++) {
@@ -48,7 +48,7 @@ if(inputPhones) {
   const modalClose = modal.querySelector('.modal__close');
   const form = modal.querySelector('form');
   const userName = modal.querySelector('#user-name');
-  const phone = modal.querySelector('#phone');
+  const phone = modal.querySelector('[type=tel]');
   const message = modal.querySelector('#message');
   const isStorageSupport = true;
   const storage = {};

@@ -1553,7 +1553,8 @@ header {
 .modal {
   display: none; }
   .modal--open {
-    display: block; }
+    display: block;
+    animation: modal-open 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
 
 .modal__base {
   position: absolute;
@@ -1701,3 +1702,9 @@ header {
   background-color: var(--transparent);
   border: none;
   cursor: pointer; }
+
+@keyframes modal-open {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }

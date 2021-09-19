@@ -1,6 +1,6 @@
 'use strict';
 
-const inputPhones = document.querySelectorAll('#phone');
+const inputPhones = document.querySelectorAll('[type=tel]');
 
 if(inputPhones) {
   for (let i = 0; i < inputPhones.length; i++) {
