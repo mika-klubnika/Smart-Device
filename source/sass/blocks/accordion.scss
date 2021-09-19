@@ -2,6 +2,7 @@
   position: relative;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 
   @media (max-width: $max-tablet) {
     grid-column: 1/3;
@@ -9,21 +10,21 @@
   }
 
   @media (max-width: $max-mobile) {
-      flex-direction: column;
-    }
+    flex-direction: column;
   }
+}
 
-  .accordion__item {
-    @media (max-width: $max-mobile) {
-      padding-top: 28px;
-    }
+.accordion__button {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  cursor: pointer;
+
+  @media (max-width: $max-mobile) {
+    height: 73px;
   }
-
-  .accordion__button {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    cursor: pointer;
 }
 
 .accordion__toggle {
@@ -31,8 +32,8 @@
 
   @media (max-width: $max-mobile) {
     position: absolute;
-    top: -5px;
-    right: -4px;
+    top: 25px;
+    right: -2px;
 
     display: block;
     padding: 0;
@@ -57,7 +58,10 @@
 }
 
 .accordion__item--active .accordion__block {
-  display: block;
+  @media (max-width: $max-mobile) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .accordion__item--active .accordion__toggle {
@@ -65,7 +69,10 @@
 }
 
 .accordion__item--nojs .accordion__block {
-  display: block;
+  @media (max-width: $max-mobile) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .accordion__item--nojs .accordion__toggle {

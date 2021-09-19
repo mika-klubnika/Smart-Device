@@ -41,7 +41,10 @@
 
 .products ul {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   column-gap: 30px;
+  row-gap: 30px;
 
   @media (max-width: $max-tablet) {
     flex-direction: column;
@@ -54,11 +57,16 @@
 }
 
 .products__item {
-  width: 33%;
+  width: 370px;
   height: 620px;
 
   background-size: 370px 620px;
   background-repeat: no-repeat;
+  background-color: var(--dark);
+
+  @media (max-width: $max-desktop - 1px) {
+    width: 30%;
+  }
 
   @media (max-width: $min-desktop) {
     height: 480px;

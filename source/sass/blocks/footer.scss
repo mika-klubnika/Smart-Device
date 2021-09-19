@@ -10,7 +10,7 @@
   justify-content: space-between;
 
   padding-top: 65px;
-  padding-bottom: 55px;
+  padding-bottom: 52px;
 
 
   @media (max-width: $max-tablet) {
@@ -43,7 +43,7 @@
   text-transform: uppercase;
 
   @media (max-width: $max-mobile) {
-    margin-bottom: 28px;
+    margin-bottom: 0;
   }
 }
 
@@ -109,6 +109,7 @@
 
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 
   min-height: 52px;
 

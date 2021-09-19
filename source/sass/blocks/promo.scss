@@ -36,7 +36,7 @@
 .promo__inner {
   margin-top: 168px;
   padding-bottom: 10px;
-  height: 526px;
+  min-height: 526px;
 
   @media (max-width: $min-desktop) {
     margin-top: 100px;

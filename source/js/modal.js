@@ -22,6 +22,7 @@
 
   modalButton.addEventListener('click', () =>{
     modal.classList.add('modal--open');
+    document.body.style.overflow = 'hidden';
 
     if (storage.name) {
       userName.value = storage.name;
@@ -35,10 +36,12 @@
 
   modalBase.addEventListener('click', evt => {
     evt.target === modalBase && modal.classList.remove('modal--open');
+    document.body.style.overflow = 'auto';
   });
 
   modalClose.addEventListener('click', () => {
     modal.classList.remove('modal--open');
+    document.body.style.overflow = 'auto';
   });
 
   form.addEventListener('submit', () => {
@@ -53,7 +56,8 @@
     if (evt.keyCode === 27) {
       evt.preventDefault();
       if (modal.classList.contains('modal--open')) {
-        modal.classList.toggle('modal--open');
+        modal.classList.remove('modal--open');
+        document.body.style.overflow = 'auto';
       }
     }
   });

@@ -47,12 +47,12 @@
   }
 }
 
-.address__tel {
+.address ul {
   @media (max-width: $max-mobile) {
     padding-bottom: 27px;
   }
 }
 
-.address__tel li {
+.address li {
   margin-bottom: 2px;
 }

@@ -3,7 +3,7 @@
   align-items: center;
 }
 
-.contacts__list {
+.contacts ul {
   display: flex;
   margin-right: 45px;
   margin-left: 45px;
@@ -13,7 +13,7 @@
   }
 }
 
-.contacts__item {
+.contacts li {
   display: flex;
   align-items: center;
 
@@ -35,7 +35,7 @@
   }
 }
 
-.contacts__item a {
+.contacts a {
   position: relative;
   display: flex;
 
@@ -54,7 +54,7 @@
   }
 }
 
-.contacts__item--email svg {
+.contacts__email svg {
   width: 19px;
   height: 14px;
 
@@ -64,7 +64,7 @@
   }
 }
 
-.contacts__item--phone svg {
+.contacts__phone svg {
   width: 18px;
   height: 18px;
 

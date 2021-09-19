@@ -1,0 +1,126 @@
+input:not([type="checkbox"]) {
+  padding: 14px 16px;
+
+  height: 51px;
+
+  color: var(--white);
+  background-color: var(--white-01);
+  border: none;
+
+  &::placeholder {
+    font-family: $pt-mono;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--white);
+  }
+
+  &:focus {
+    outline: 1px solid var(--white);
+  }
+}
+
+input[type="text"] {
+  margin-right: 24px;
+
+  @media (max-width: $max-mobile) {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+}
+
+textarea {
+  padding: 14px 16px;
+  width: 100%;
+
+  color: var(--white);
+
+  resize: none;
+  background-color: var(--white-01);
+  border: none;
+
+  &::placeholder {
+    font-family: $pt-mono;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--white);
+  }
+
+  &:focus {
+    outline: 1px solid var(--white);
+  }
+}
+
+input[type="checkbox"]+label {
+  position: relative;
+  display: flex;
+
+  font-size: 14px;
+  line-height: 16px;
+
+  opacity: 0.8;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 7px;
+    width: 16px;
+    height: 16px;
+    border: 1px solid var(--white);
+  }
+}
+
+input[type="checkbox"]:checked+label {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 12px;
+    width: 5px;
+    height: 7px;
+    border-bottom: 1px solid var(--white);
+    border-right: 1px solid var(--white);
+    transform: rotate(45deg);
+  }
+}
+
+input[type="checkbox"]:focus+label::before,
+input[type="checkbox"]:hover+label::before {
+  outline: 1px solid;
+}
+
+button[type="submit"] {
+  min-height: 45px;
+
+  font-family: $roboto-condensed;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  color: var(--white);
+  background-color: var(--transparent);
+
+  border: 1px solid var(--white);
+  border-radius: 5px;
+
+  cursor: pointer;
+  outline: none;
+
+  transition: background-color 0.3s, color 0.3s;
+
+  &:hover,
+  &:focus {
+    background-color: var(--white);
+    color: var(--heavenly);
+    border: 1px solid var(--heavenly);
+  }
+
+  &:active {
+    background-color: var(--transparent);
+    color: var(--white);
+    border: 1px solid var(--white);
+  }
+}
