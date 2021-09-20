@@ -50,7 +50,7 @@ textarea {
   }
 }
 
-input[type="checkbox"]+label {
+input[type="checkbox"] + label {
   position: relative;
   display: flex;
 
@@ -71,7 +71,7 @@ input[type="checkbox"]+label {
   }
 }
 
-input[type="checkbox"]:checked+label {
+input[type="checkbox"]:checked + label {
   &::after {
     content: "";
     position: absolute;
@@ -85,8 +85,8 @@ input[type="checkbox"]:checked+label {
   }
 }
 
-input[type="checkbox"]:focus+label::before,
-input[type="checkbox"]:hover+label::before {
+input[type="checkbox"]:focus + label::before,
+input[type="checkbox"]:hover + label::before {
   outline: 1px solid;
 }
 

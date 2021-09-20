@@ -25,6 +25,15 @@
   }
 }
 
+.address__block {
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: $max-mobile) {
+    padding-bottom: 27px;
+  }
+}
+
 .address p {
   font-size: 15px;
   line-height: 25px;

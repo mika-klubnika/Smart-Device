@@ -1,17 +1,17 @@
 'use strict';
 
-(() => {
-  const modal = document.querySelector('.modal');
-  const modalButton = document.querySelector('.modal-button');
-  const modalBase = modal.querySelector('.modal__base');
-  const modalClose = modal.querySelector('.modal__close');
-  const form = modal.querySelector('form');
-  const userName = modal.querySelector('#user-name');
-  const phone = modal.querySelector('[type=tel]');
-  const message = modal.querySelector('#message');
-  const isStorageSupport = true;
-  const storage = {};
+const modal = document.querySelector('.modal');
+const modalButton = document.querySelector('.modal-button');
+const modalBase = modal.querySelector('.modal__base');
+const modalClose = modal.querySelector('.modal__close');
+const form = modal.querySelector('form');
+const userName = modal.querySelector('#user-name');
+const phone = modal.querySelector('[type=tel]');
+const message = modal.querySelector('#message');
+const isStorageSupport = true;
+const storage = {};
 
+if (modal && modalButton && modalBase && modalClose) {
   try {
     storage.name = localStorage.getItem('name');
     storage.phone = localStorage.getItem('phone');
@@ -20,9 +20,10 @@
     isStorageSupport = false;
   }
 
-  modalButton.addEventListener('click', () =>{
+  modalButton.addEventListener('click', (evt) => {
+    evt.preventDefault();
     modal.classList.add('modal--open');
-    document.body.style.overflow = 'hidden';
+    document.body.classList.add('hidden');
 
     if (storage.name) {
       userName.value = storage.name;
@@ -36,12 +37,11 @@
 
   modalBase.addEventListener('click', evt => {
     evt.target === modalBase && modal.classList.remove('modal--open');
-    document.body.style.overflow = 'auto';
   });
 
   modalClose.addEventListener('click', () => {
     modal.classList.remove('modal--open');
-    document.body.style.overflow = 'auto';
+    document.body.classList.remove('hidden');
   });
 
   form.addEventListener('submit', () => {
@@ -57,8 +57,8 @@
       evt.preventDefault();
       if (modal.classList.contains('modal--open')) {
         modal.classList.remove('modal--open');
-        document.body.style.overflow = 'auto';
+        document.body.classList.remove('hidden');
       }
     }
   });
-})();
+}

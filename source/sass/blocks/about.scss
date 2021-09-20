@@ -13,7 +13,7 @@
 }
 
 .about__text {
-  padding: 25px 120px 25px 180px;
+  padding: 25px 10px 25px 180px;
 
   background-image: url("../img/2005.png");
   background-size: 220px 317px;
@@ -36,7 +36,7 @@
   @media (max-width: $max-mobile) {
     padding-bottom: 25px;
     padding-left: 0;
-    background-image: none
+    background-image: none;
   }
 }
 
@@ -62,7 +62,7 @@
 }
 
 .about__text p {
-  padding-bottom: 22px;
+  margin-bottom: 22px;
 
   font-family: $pt-mono;
   font-size: 16px;
@@ -70,8 +70,16 @@
 
   color: var(--gray-black);
 
+  @media (max-width: $max-tablet) {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow-y: hidden;
+  }
+
   @media (max-width: $max-mobile) {
-    padding-bottom: 35px;
+    margin-bottom: 35px;
+    -webkit-line-clamp: 8;
   }
 }
 
@@ -86,7 +94,7 @@
   align-items: center;
   justify-content: center;
 
-  margin-top: 20px;
+  margin-top: 40px;
   width: 180px;
   min-height: 45px;
 

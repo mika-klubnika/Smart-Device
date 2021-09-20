@@ -12,7 +12,12 @@
   }
 }
 
-.nav button {
+.nav .modal-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: 50px;
   width: 180px;
   min-height: 45px;
 

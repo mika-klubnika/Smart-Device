@@ -30,7 +30,7 @@
   color: var(--white);
   background-color: var(--heavenly);
 
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 
 .modal h2 {
@@ -61,7 +61,7 @@
   height: 144px;
 }
 
-.modal input[type="checkbox"]+label {
+.modal input[type="checkbox"] + label {
   padding-left: 48px;
   margin-right: 10px;
 }

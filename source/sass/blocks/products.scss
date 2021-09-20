@@ -193,6 +193,15 @@
   }
 }
 
+.products h3 {
+  padding-right: 90px;
+  font-weight: normal;
+
+  @media (max-width: $min-desktop) {
+    padding-right: 0;
+  }
+}
+
 .products__item--accessories a {
   padding-top: 53px;
 
