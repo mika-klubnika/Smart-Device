@@ -17,7 +17,7 @@
 </head>
 
 <body>
-  <header>
+  <header class="header">
     <nav class="nav">
       <div class="container nav__inner">
         <a class="logo">
@@ -26,23 +26,17 @@
           <p class="logo__tagline">умные технологии</p>
         </a>
         <div class="contacts">
-          <ul>
-            <li class="contacts__email">
-              <a href="mailto:info@sd.ru" aria-label="info@sd.ru">
-                <svg width="19" height="14">
-                  <use xlink:href="img/sprite.svg#email"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="contacts__phone">
-              <a href="tel:+74950005252" aria-label="+7 (495) 000 52 52">
-                <svg width="18" height="18">
-                  <use xlink:href="img/sprite.svg#phone"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-          <button class="modal-button">Заказать звонок</button>
+          <a class="contacts__email" href="mailto:info@sd.ru" aria-label="info@sd.ru">
+            <svg width="19" height="14">
+              <use xlink:href="img/sprite.svg#email"></use>
+            </svg>
+          </a>
+          <a class="contacts__phone" href="tel:+74950005252" aria-label="+7 (495) 000 52 52">
+            <svg width="18" height="18">
+              <use xlink:href="img/sprite.svg#phone"></use>
+            </svg>
+          </a>
+          <a href="#" class="modal-button">Заказать звонок</a>
         </div>
       </div>
     </nav>
@@ -62,51 +56,47 @@
 
   <main>
     <div class="info">
-      <section class="advantages">
-        <div class="container container--main">
-          <ul>
-            <li>
-              <svg width="29" height="35">
-                <use xlink:href="img/sprite.svg#deadlines"></use>
-              </svg>
-              <h3>Оперативные сроки</h3>
-              <p>Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
-            </li>
-            <li>
-              <svg width="35" height="35">
-                <use xlink:href="img/sprite.svg#suppliers"></use>
-              </svg>
-              <h3>Крупные поставщики</h3>
-              <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.</p>
-            </li>
-            <li>
-              <svg width="36" height="31">
-                <use xlink:href="img/sprite.svg#privacy"></use>
-              </svg>
-              <h3>Полная конфиденциальность</h3>
-              <p>По желанию клиента мы обеспечиваем полную конфеденциальность.</p>
-            </li>
-            <li>
-              <svg width="35" height="35">
-                <use xlink:href="img/sprite.svg#price"></use>
-              </svg>
-              <h3>Персонализация стоимости</h3>
-              <p>Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.</p>
-            </li>
-          </ul>
-        </div>
+      <section class="advantages container container--main">
+        <ul>
+          <li>
+            <svg width="29" height="35">
+              <use xlink:href="img/sprite.svg#deadlines"></use>
+            </svg>
+            <h3>Оперативные сроки</h3>
+            <p>Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
+          </li>
+          <li>
+            <svg width="35" height="35">
+              <use xlink:href="img/sprite.svg#suppliers"></use>
+            </svg>
+            <h3>Крупные поставщики</h3>
+            <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.</p>
+          </li>
+          <li>
+            <svg width="36" height="31">
+              <use xlink:href="img/sprite.svg#privacy"></use>
+            </svg>
+            <h3>Полная конфиденциальность</h3>
+            <p>По желанию клиента мы обеспечиваем полную конфеденциальность.</p>
+          </li>
+          <li>
+            <svg width="35" height="35">
+              <use xlink:href="img/sprite.svg#price"></use>
+            </svg>
+            <h3>Персонализация стоимости</h3>
+            <p>Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.</p>
+          </li>
+        </ul>
       </section>
-      <section class="about">
-        <div class="container container--main">
+      <section class="about container container--main">
           <div class="about__text">
             <h2>О компании</h2>
             <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
 
-            <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог <span>(РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</span>
+            <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.
             </p>
             <a href="#">Подробнее</a>
           </div>
-        </div>
       </section>
     </div>
 
@@ -115,13 +105,19 @@
         <h2>Service Device предлагает следующие товары и услуги</h2>
         <ul>
           <li class="products__item products__item--production">
-            <a href="#">Производство <br> печатных плат</a>
+            <a href="#">
+              <h3>Производство печатных плат</h3>
+            </a>
           </li>
           <li class="products__item products__item--montage">
-            <a href="#">Монтаж печатных <br> плат</a>
+            <a href="#">
+              <h3>Монтаж печатных плат</h3>
+            </a>
           </li>
           <li class="products__item products__item--accessories">
-            <a href="#">Комплектующие <br> для светотехники</a>
+            <a href="#">
+              <h3>Комплектующие для светотехники</h3>
+            </a>
           </li>
         </ul>
       </div>
@@ -143,7 +139,7 @@
             <div class="feedback__wrapper">
               <button type="submit">Задать вопрос</button>
               <input class="visually-hidden" type="checkbox" name="agree" id="agree" required>
-              <label for="agree">Я согласен на обработку <br> персональных данных</label>
+              <label for="agree">Я согласен на обработку персональных данных</label>
             </div>
           </form>
         </div>
@@ -229,22 +225,15 @@
             <button class="address__toggle accordion__toggle accordion__toggle--close" type="button" aria-label="Открыть/Закрыть"></button>
           </div>
 
-          <div class="accordion__block">
+          <div class="accordion__block address__block">
             <p>г. Мытищи, Олимпийский проспект, д.10</p>
-            <ul>
-              <li>
-                <a href="tel:+74955894050">+7 (495) 589-40-50</a>
-              </li>
-              <li>
-                <a href="tel:+79250038767">+7 (925) 003-87-67</a>
-              </li>
-              <li>
-                <a href="tel:+792692608079">+7 (926) 926-080-79</a>
-              </li>
-            </ul>
+              <a href="tel:+74955894050">+7 (495) 589-40-50</a>
+              <a href="tel:+79250038767">+7 (925) 003-87-67</a>
+              <a href="tel:+792692608079">+7 (926) 926-080-79</a>
           </div>
         </div>
       </div>
+
     </div>
 
     <div class="footer__text-wrapper">
@@ -281,6 +270,7 @@
     </div>
   </section>
 
+  <script src="js/vendor.js"></script>
   <script src="js/main.js"></script>
 </body>
 
