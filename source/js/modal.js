@@ -35,8 +35,11 @@ if (modal && modalButton && modalBase && modalClose) {
     }
   });
 
-  modalBase.addEventListener('click', evt => {
-    evt.target === modalBase && modal.classList.remove('modal--open');
+  modalBase.addEventListener('click', (evt) => {
+    if(evt.target === modalBase) {
+      modal.classList.remove('modal--open')
+      document.body.classList.remove('hidden');
+    }
   });
 
   modalClose.addEventListener('click', () => {
@@ -52,7 +55,7 @@ if (modal && modalButton && modalBase && modalClose) {
     }
   });
 
-  window.addEventListener('keydown', evt => {
+  window.addEventListener('keydown', (evt) => {
     if (evt.keyCode === 27) {
       evt.preventDefault();
       if (modal.classList.contains('modal--open')) {
