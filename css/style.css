@@ -1637,7 +1637,7 @@ button[type="submit"] {
   top: 0;
   left: 0;
   width: 100%;
-  min-height: 878px;
+  min-height: 100vh;
   background-color: var(--black-05); }
 
 .modal form {
