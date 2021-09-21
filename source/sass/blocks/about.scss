@@ -1,6 +1,6 @@
 .about {
   padding-top: 30px;
-  padding-bottom: 80px;
+  padding-bottom: 85px;
 
   @media (max-width: $max-tablet) {
     padding-bottom: 20px;
@@ -57,6 +57,7 @@
   }
 
   @media (max-width: $max-mobile) {
+    margin-bottom: 23px;
     font-size: 28px;
   }
 }
@@ -71,6 +72,7 @@
   color: var(--gray-black);
 
   @media (max-width: $max-tablet) {
+    /* stylelint-disable */
     display: -webkit-box;
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
@@ -78,8 +80,9 @@
   }
 
   @media (max-width: $max-mobile) {
-    margin-bottom: 35px;
     -webkit-line-clamp: 8;
+    /* stylelint-enable */
+    margin-bottom: 38px;
   }
 }
 
@@ -115,7 +118,7 @@
   transition: background-color 0.3s, color 0.3s;
 
   @media (max-width: $max-tablet) {
-    margin-top: 20px;
+    margin-top: 45px;
   }
 
   @media (max-width: $max-mobile) {

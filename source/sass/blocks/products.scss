@@ -34,7 +34,7 @@
   @media (max-width: $max-mobile) {
     margin-right: 0;
     margin-left: 10px;
-    margin-bottom: 45px;
+    margin-bottom: 40px;
     font-size: 28px;
   }
 }
@@ -43,7 +43,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  column-gap: 30px;
+  column-gap: 20px;
   row-gap: 30px;
 
   @media (max-width: $max-tablet) {
@@ -65,7 +65,7 @@
   background-color: var(--dark);
 
   @media (max-width: $max-desktop - 1px) {
-    width: 30%;
+    width: 31%;
   }
 
   @media (max-width: $min-desktop) {
@@ -160,9 +160,6 @@
   width: 100%;
   height: 100%;
 
-  font-family: $roboto-condensed;
-  font-size: 20px;
-  line-height: 30px;
   color: inherit;
 
   @media (max-width: $max-tablet) {
@@ -195,10 +192,18 @@
 
 .products h3 {
   padding-right: 90px;
-  font-weight: normal;
 
-  @media (max-width: $min-desktop) {
-    padding-right: 0;
+  font-family: $roboto-condensed;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+
+  @media (max-width: $max-tablet) {
+    padding-right: 460px;
+  }
+
+  @media (max-width: $max-mobile) {
+    padding-right: 50px;
   }
 }
 
