@@ -6,6 +6,7 @@ input:not([type="checkbox"]) {
   color: var(--white);
   background-color: var(--white-01);
   border: none;
+  border-radius: 0;
 
   &::placeholder {
     font-family: $pt-mono;
@@ -37,6 +38,7 @@ textarea {
   resize: none;
   background-color: var(--white-01);
   border: none;
+  border-radius: 0;
 
   &::placeholder {
     font-family: $pt-mono;
