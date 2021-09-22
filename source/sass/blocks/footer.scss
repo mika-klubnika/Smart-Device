@@ -6,7 +6,7 @@
 .footer__inner {
   display: grid;
   grid-template-columns: max-content 1fr;
-  column-gap: 185px;
+  column-gap: 168px;
   justify-content: space-between;
 
   padding-top: 65px;
@@ -81,7 +81,6 @@
 
   @media (max-width: $max-tablet) {
     display: block;
-    padding-left: 20px;
 
     font-size: 13px;
     line-height: 24px;

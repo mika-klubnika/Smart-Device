@@ -1,13 +1,14 @@
 .about {
-  padding-top: 30px;
+  padding-top: 15px;
   padding-bottom: 85px;
 
   @media (max-width: $max-tablet) {
-    padding-bottom: 20px;
+    padding-top: 11px;
+    padding-bottom: 18px;
   }
 
   @media (max-width: $max-mobile) {
-    padding-top: 28px;
+    padding-top: 15px;
     padding-bottom: 38px;
   }
 }
@@ -82,7 +83,7 @@
   @media (max-width: $max-mobile) {
     -webkit-line-clamp: 8;
     /* stylelint-enable */
-    margin-bottom: 38px;
+    margin-bottom: 36px;
   }
 }
 

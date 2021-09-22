@@ -1,5 +1,6 @@
 .social-icon {
   display: flex;
+  flex-wrap: wrap;
   margin-left: -8px;
 
   @media (max-width: $max-tablet) {

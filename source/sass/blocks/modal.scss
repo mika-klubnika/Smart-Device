@@ -62,6 +62,10 @@
   height: 144px;
 }
 
+input[type=checkbox] {
+  bottom: 20px;
+}
+
 .modal input[type="checkbox"] + label {
   padding-left: 48px;
   margin-right: 10px;

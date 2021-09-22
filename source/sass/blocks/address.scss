@@ -45,6 +45,9 @@
 }
 
 .address a {
+  width: max-content;
+  white-space: nowrap;
+
   font-size: 15px;
   line-height: 25px;
   color: inherit;

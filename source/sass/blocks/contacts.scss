@@ -1,13 +1,29 @@
 .contacts {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+}
+
+.contacts li {
+  margin-bottom: 10px;
+
+  &:not(:last-child) {
+    margin-right: 85px;
+
+    @media (max-width: $max-tablet) {
+      margin-right: 32px;
+    }
+
+    @media (max-width: $max-mobile) {
+      margin-right: 23px;
+    }
+  }
 }
 
 .contacts a {
   position: relative;
   display: flex;
 
-  width: 212px;
   white-space: nowrap;
 
   font-size: 16px;
@@ -17,25 +33,13 @@
   @media (max-width: $max-tablet) {
     width: max-content;
   }
-
-  &::before {
-    position: absolute;
-    content: attr(aria-label);
-    padding-left: 35px;
-
-    @media (max-width: $max-tablet) {
-      content: "";
-    }
-  }
 }
 
-.contacts__email {
-  @media (max-width: $max-tablet) {
-    margin-right: 32px;
-  }
+.contacts span {
+  padding-left: 20px;
 
-  @media (max-width: $max-mobile) {
-    margin-right: 23px;
+  @media (max-width: $max-tablet) {
+    display: none;
   }
 }
 

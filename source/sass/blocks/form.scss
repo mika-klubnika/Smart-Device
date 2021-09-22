@@ -50,7 +50,44 @@ textarea {
   }
 }
 
-input[type="checkbox"] + label {
+form .form-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  align-items: center;
+
+  margin-top: 43px;
+  margin-right: 35px;
+
+  @media (max-width: $max-tablet) {
+    margin-top: 45px;
+    margin-right: 33px;
+  }
+
+  @media (max-width: $max-mobile) {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    margin-right: 0;
+    margin-top: 28px;
+  }
+
+  &--modal {
+    flex-direction: column-reverse;
+    margin-top: 0;
+    margin-right: 0;
+  }
+}
+
+form .checkbox {
+  position: relative;
+}
+
+input[type="checkbox"] {
+  bottom: 0px;
+  left: 15px;
+}
+
+input[type="checkbox"]+label {
   position: relative;
   display: flex;
 
@@ -64,19 +101,19 @@ input[type="checkbox"] + label {
     content: "";
     position: absolute;
     top: 0;
-    left: 7px;
+    left: 12px;
     width: 16px;
     height: 16px;
     border: 1px solid var(--white);
   }
 }
 
-input[type="checkbox"]:checked + label {
+input[type="checkbox"]:checked+label {
   &::after {
     content: "";
     position: absolute;
     top: 4px;
-    left: 12px;
+    left: 17px;
     width: 5px;
     height: 7px;
     border-bottom: 1px solid var(--white);
@@ -85,8 +122,8 @@ input[type="checkbox"]:checked + label {
   }
 }
 
-input[type="checkbox"]:focus + label::before,
-input[type="checkbox"]:hover + label::before {
+input[type="checkbox"]:focus+label::before,
+input[type="checkbox"]:hover+label::before {
   outline: 1px solid;
 }
 

@@ -456,7 +456,7 @@ p {
 
 .nav__inner {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center; }
   @media (max-width: 1023px) {
     .nav__inner {
@@ -469,7 +469,8 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 47px;
+  margin-left: 50px;
+  padding: 5px 20px;
   width: 180px;
   min-height: 45px;
   background-color: var(--transparent);
@@ -481,6 +482,7 @@ p {
   line-height: 16px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  text-align: center;
   color: inherit;
   cursor: pointer; }
   @media (max-width: 1023px) {
@@ -491,6 +493,8 @@ p {
   display: grid;
   grid-template-columns: max-content 1fr;
   column-gap: 16px;
+  margin-right: auto;
+  padding-right: 20px;
   width: max-content;
   color: inherit; }
   @media (max-width: 1023px) {
@@ -503,6 +507,7 @@ p {
     margin-bottom: 45px; }
     @media (max-width: 1023px) {
       .logo--footer {
+        margin-right: 0;
         column-gap: 17px;
         margin-bottom: 0;
         padding-left: 25px; } }
@@ -510,7 +515,10 @@ p {
       .logo--footer {
         grid-template-columns: max-content 1fr;
         padding-left: 0;
-        margin-bottom: 26px; } }
+        padding-right: 0;
+        margin-bottom: 26px;
+        margin-right: auto;
+        margin-left: auto; } }
 
 .logo img {
   grid-row: 1/3;
@@ -530,7 +538,8 @@ p {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: bold;
   font-size: 25px;
-  line-height: 29px; }
+  line-height: 29px;
+  white-space: nowrap; }
   @media (max-width: 767px) {
     .logo__title {
       display: none; } }
@@ -551,12 +560,23 @@ p {
 
 .contacts {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  flex-wrap: wrap; }
+
+.contacts li {
+  margin-bottom: 10px; }
+  .contacts li:not(:last-child) {
+    margin-right: 85px; }
+    @media (max-width: 1023px) {
+      .contacts li:not(:last-child) {
+        margin-right: 32px; } }
+    @media (max-width: 767px) {
+      .contacts li:not(:last-child) {
+        margin-right: 23px; } }
 
 .contacts a {
   position: relative;
   display: flex;
-  width: 212px;
   white-space: nowrap;
   font-size: 16px;
   line-height: 18px;
@@ -564,21 +584,12 @@ p {
   @media (max-width: 1023px) {
     .contacts a {
       width: max-content; } }
-  .contacts a::before {
-    position: absolute;
-    content: attr(aria-label);
-    padding-left: 35px; }
-    @media (max-width: 1023px) {
-      .contacts a::before {
-        content: ""; } }
 
-@media (max-width: 1023px) {
-  .contacts__email {
-    margin-right: 32px; } }
-
-@media (max-width: 767px) {
-  .contacts__email {
-    margin-right: 23px; } }
+.contacts span {
+  padding-left: 20px; }
+  @media (max-width: 1023px) {
+    .contacts span {
+      display: none; } }
 
 .contacts__email svg {
   width: 19px;
@@ -746,7 +757,7 @@ p {
 .footer__inner {
   display: grid;
   grid-template-columns: max-content 1fr;
-  column-gap: 185px;
+  column-gap: 168px;
   justify-content: space-between;
   padding-top: 65px;
   padding-bottom: 52px; }
@@ -804,7 +815,6 @@ p {
   @media (max-width: 1023px) {
     .footer__years {
       display: block;
-      padding-left: 20px;
       font-size: 13px;
       line-height: 24px;
       letter-spacing: 0.04em;
@@ -864,6 +874,7 @@ p {
 
 .social-icon {
   display: flex;
+  flex-wrap: wrap;
   margin-left: -8px; }
   @media (max-width: 1023px) {
     .social-icon {
@@ -964,6 +975,8 @@ p {
       padding-right: 20px; } }
 
 .address a {
+  width: max-content;
+  white-space: nowrap;
   font-size: 15px;
   line-height: 25px;
   color: inherit;
@@ -1056,41 +1069,45 @@ p {
       background-position: left -655px top 478px; } }
 
 .advantages {
-  padding-top: 112px;
+  padding-top: 98px;
   padding-bottom: 50px; }
   @media (max-width: 1023px) {
     .advantages {
-      padding-top: 54px;
+      padding-top: 40px;
       padding-bottom: 20px; } }
   @media (max-width: 767px) {
     .advantages {
-      padding-top: 36px; } }
+      padding-top: 25px; } }
 
 .advantages ul {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-  row-gap: 30px; }
-  @media (max-width: 767px) {
-    .advantages ul {
-      row-gap: 20px; } }
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px; }
 
 .advantages li {
+  justify-content: center;
+  margin: 15px;
   padding: 40px 42px;
   max-width: 570px;
-  width: 49%;
+  width: 47%;
   min-height: 299px;
   background-color: var(--white);
   border: 1px solid var(--light);
   border-left: 3px solid var(--heavenly);
   transition: background-color 0.3s; }
+  @media (max-width: 1439px) {
+    .advantages li {
+      width: 46%; } }
   @media (max-width: 1023px) {
     .advantages li {
       padding: 24px 22px 20px 22px;
-      width: 48%;
+      margin: 15px 14px;
       min-height: 232px; } }
   @media (max-width: 767px) {
     .advantages li {
+      margin: 10px 15px;
       padding: 24px 10px 30px 25px;
       width: 100%; }
       .advantages li:first-child {
@@ -1130,14 +1147,15 @@ p {
   color: var(--gray-black); }
 
 .about {
-  padding-top: 30px;
+  padding-top: 15px;
   padding-bottom: 85px; }
   @media (max-width: 1023px) {
     .about {
-      padding-bottom: 20px; } }
+      padding-top: 11px;
+      padding-bottom: 18px; } }
   @media (max-width: 767px) {
     .about {
-      padding-top: 28px;
+      padding-top: 15px;
       padding-bottom: 38px; } }
 
 .about__text {
@@ -1196,7 +1214,7 @@ p {
     .about__text p {
       -webkit-line-clamp: 8;
       /* stylelint-enable */
-      margin-bottom: 38px; } }
+      margin-bottom: 36px; } }
 
 @media (max-width: 1023px) {
   .about__text span {
@@ -1237,26 +1255,27 @@ p {
 
 .products {
   padding-top: 90px;
-  padding-bottom: 127px;
+  padding-bottom: 115px;
   color: var(--white);
   background-color: var(--dark-desaturated-blue); }
   @media (max-width: 1023px) {
     .products {
       padding-top: 48px;
-      padding-bottom: 80px; } }
+      padding-bottom: 60px; } }
   @media (max-width: 767px) {
     .products {
       padding-top: 50px;
-      padding-bottom: 63px; } }
+      padding-bottom: 48px; } }
 
 .products h2 {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: normal;
   font-size: 36px;
   line-height: 51px; }
   @media (max-width: 1023px) {
     .products h2 {
+      margin-bottom: 30px;
       margin-right: 90px;
       font-size: 32px;
       line-height: 140%; } }
@@ -1264,24 +1283,18 @@ p {
     .products h2 {
       margin-right: 0;
       margin-left: 10px;
-      margin-bottom: 40px;
+      margin-bottom: 27px;
       font-size: 28px; } }
 
 .products ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  column-gap: 20px;
-  row-gap: 30px; }
-  @media (max-width: 1023px) {
-    .products ul {
-      flex-direction: column;
-      row-gap: 46px; } }
-  @media (max-width: 767px) {
-    .products ul {
-      row-gap: 30px; } }
+  margin-right: -10px;
+  margin-left: -10px; }
 
 .products__item {
+  margin: 10px;
   width: 370px;
   height: 620px;
   background-size: 370px 620px;
@@ -1289,16 +1302,20 @@ p {
   background-color: var(--dark); }
   @media (max-width: 1439px) {
     .products__item {
-      width: 31%; } }
+      width: 30%; } }
   @media (max-width: 1220px) {
     .products__item {
       height: 480px;
       background-size: cover; } }
   @media (max-width: 1023px) {
     .products__item {
+      margin: 22px 10px;
       width: 100%;
       height: 256px;
       background-size: cover; } }
+  @media (max-width: 767px) {
+    .products__item {
+      margin: 15px 10px; } }
   .products__item--production {
     background-image: url("../img/production.png"); }
     @media (min-resolution: 2dppx) {
@@ -1379,7 +1396,7 @@ p {
     box-shadow: var(--shadow); }
 
 .products h3 {
-  padding-right: 90px;
+  padding-right: 120px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: normal;
   font-size: 20px;
@@ -1433,6 +1450,35 @@ textarea {
   textarea:focus {
     outline: 1px solid var(--white); }
 
+form .form-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin-top: 43px;
+  margin-right: 35px; }
+  @media (max-width: 1023px) {
+    form .form-wrapper {
+      margin-top: 45px;
+      margin-right: 33px; } }
+  @media (max-width: 767px) {
+    form .form-wrapper {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+      margin-right: 0;
+      margin-top: 28px; } }
+  form .form-wrapper--modal {
+    flex-direction: column-reverse;
+    margin-top: 0;
+    margin-right: 0; }
+
+form .checkbox {
+  position: relative; }
+
+input[type="checkbox"] {
+  bottom: 0px;
+  left: 15px; }
+
 input[type="checkbox"] + label {
   position: relative;
   display: flex;
@@ -1444,7 +1490,7 @@ input[type="checkbox"] + label {
     content: "";
     position: absolute;
     top: 0;
-    left: 7px;
+    left: 12px;
     width: 16px;
     height: 16px;
     border: 1px solid var(--white); }
@@ -1453,7 +1499,7 @@ input[type="checkbox"]:checked + label::after {
   content: "";
   position: absolute;
   top: 4px;
-  left: 12px;
+  left: 17px;
   width: 5px;
   height: 7px;
   border-bottom: 1px solid var(--white);
@@ -1563,23 +1609,6 @@ button[type="submit"] {
     .feedback p {
       margin-bottom: 22px; } }
 
-.feedback__wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 43px;
-  margin-right: 35px; }
-  @media (max-width: 1023px) {
-    .feedback__wrapper {
-      margin-top: 45px;
-      margin-right: 33px; } }
-  @media (max-width: 767px) {
-    .feedback__wrapper {
-      flex-direction: column;
-      align-items: flex-start;
-      margin-right: 0;
-      margin-top: 28px; } }
-
 .feedback input:not([type="checkbox"]) {
   width: 47%; }
   @media (max-width: 767px) {
@@ -1685,6 +1714,9 @@ button[type="submit"] {
 .modal textarea {
   margin-bottom: 30px;
   height: 144px; }
+
+input[type=checkbox] {
+  bottom: 20px; }
 
 .modal input[type="checkbox"] + label {
   padding-left: 48px;

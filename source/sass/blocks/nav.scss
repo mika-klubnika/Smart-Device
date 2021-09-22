@@ -1,6 +1,6 @@
 .nav__inner {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
 
   @media (max-width: $max-tablet) {
@@ -17,7 +17,8 @@
   justify-content: center;
   align-items: center;
 
-  margin-left: 47px;
+  margin-left: 50px;
+  padding: 5px 20px;
   width: 180px;
   min-height: 45px;
 
@@ -32,6 +33,7 @@
 
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  text-align: center;
 
   color: inherit;
   cursor: pointer;
