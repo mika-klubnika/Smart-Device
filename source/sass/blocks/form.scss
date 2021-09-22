@@ -85,11 +85,11 @@ form .checkbox {
 }
 
 input[type="checkbox"] {
-  bottom: 0px;
+  bottom: 0;
   left: 15px;
 }
 
-input[type="checkbox"]+label {
+input[type="checkbox"] + label {
   position: relative;
   display: flex;
 
@@ -110,7 +110,7 @@ input[type="checkbox"]+label {
   }
 }
 
-input[type="checkbox"]:checked+label {
+input[type="checkbox"]:checked + label {
   &::after {
     content: "";
     position: absolute;
@@ -124,8 +124,8 @@ input[type="checkbox"]:checked+label {
   }
 }
 
-input[type="checkbox"]:focus+label::before,
-input[type="checkbox"]:hover+label::before {
+input[type="checkbox"]:focus + label::before,
+input[type="checkbox"]:hover + label::before {
   outline: 1px solid;
 }
 

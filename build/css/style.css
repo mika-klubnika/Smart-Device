@@ -1085,6 +1085,9 @@ p {
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px; }
+  @media (max-width: 767px) {
+    .advantages ul {
+      justify-content: center; } }
 
 .advantages li {
   justify-content: center;
@@ -1478,7 +1481,7 @@ form .checkbox {
   position: relative; }
 
 input[type="checkbox"] {
-  bottom: 0px;
+  bottom: 0;
   left: 15px; }
 
 input[type="checkbox"] + label {
@@ -1717,7 +1720,7 @@ button[type="submit"] {
   margin-bottom: 30px;
   height: 144px; }
 
-input[type=checkbox] {
+.modal input[type="checkbox"] {
   bottom: 20px; }
 
 .modal input[type="checkbox"] + label {
