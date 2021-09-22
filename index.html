@@ -25,19 +25,25 @@
           <div class="logo__title">Smart Device</div>
           <div class="logo__tagline">умные технологии</div>
         </a>
-        <div class="contacts">
-          <a class="contacts__email" href="mailto:info@sd.ru" aria-label="info@sd.ru">
-            <svg width="19" height="14">
-              <use xlink:href="img/sprite.svg#email"></use>
-            </svg>
-          </a>
-          <a class="contacts__phone" href="tel:+74950005252" aria-label="+7 (495) 000 52 52">
-            <svg width="18" height="18">
-              <use xlink:href="img/sprite.svg#phone"></use>
-            </svg>
-          </a>
-          <a href="#" class="modal-button">Заказать звонок</a>
-        </div>
+        <ul class="contacts">
+          <li class="contacts__email">
+            <a href="mailto:info@sd.ru" aria-label="info@sd.ru">
+              <svg width="19" height="14">
+                <use xlink:href="img/sprite.svg#email"></use>
+              </svg>
+              <span>info@sd.ru</span>
+            </a>
+          </li>
+          <li class="contacts__phone">
+            <a href="tel:+74950005252" aria-label="+7 (495) 000 52 52">
+              <svg width="18" height="18">
+                <use xlink:href="img/sprite.svg#phone"></use>
+              </svg>
+              <span>+7 (495) 000 52 52</span>
+            </a>
+          </li>
+        </ul>
+        <a href="#" class="modal-button">Заказать звонок</a>
       </div>
     </nav>
     <section class="promo">
@@ -130,16 +136,18 @@
 
           <form action="https://echo.htmlacademy.ru" method="post">
             <label>
-              <input type="text" name="user-name" placeholder="Имя">
+              <input type="text" name="user-name" placeholder="Имя" required>
             </label>
             <label>
               <input type="tel" name="tel" placeholder="Телефон" required>
             </label>
-            <textarea name="question" placeholder="Ваш вопрос" required></textarea>
-            <div class="feedback__wrapper">
+            <textarea name="question" placeholder="Ваш вопрос"></textarea>
+            <div class="form-wrapper">
+              <div class="checkbox">
+                <input class="visually-hidden" type="checkbox" name="agree" id="agree" required>
+                <label for="agree">Я согласен на обработку персональных данных</label>
+              </div>
               <button type="submit">Задать вопрос</button>
-              <input class="visually-hidden" type="checkbox" name="agree" id="agree" required>
-              <label for="agree">Я согласен на обработку персональных данных</label>
             </div>
           </form>
         </div>
@@ -263,9 +271,13 @@
           <input type="tel" name="tel-modal" placeholder="Телефон" required>
         </label>
         <textarea name="question-modal" id="message" placeholder="Ваш вопрос"></textarea>
-        <button type="submit">Отправить</button>
-        <input class="visually-hidden" type="checkbox" name="agree-modal" id="agree-modal" required>
-        <label for="agree-modal">Я согласен на обработку персональных данных</label>
+        <div class="form-wrapper form-wrapper--modal">
+          <div class="checkbox">
+            <input class="visually-hidden" type="checkbox" name="agree-modal" id="agree-modal" required>
+            <label for="agree-modal">Я согласен на обработку персональных данных</label>
+          </div>
+          <button type="submit">Отправить</button>
+        </div>
       </form>
     </div>
   </section>
