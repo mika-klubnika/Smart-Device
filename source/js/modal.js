@@ -11,7 +11,7 @@ const message = modal.querySelector('#message');
 const isStorageSupport = true;
 const storage = {};
 
-if (modal && modalButton && modalBase && modalClose) {
+if (modal && modalButton && modalBase && modalClose && form && userName && phone && message) {
   try {
     storage.name = localStorage.getItem('name');
     storage.phone = localStorage.getItem('phone');
